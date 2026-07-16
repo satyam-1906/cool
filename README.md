@@ -1,14 +1,31 @@
 # Hand Gesture Mouse Control
 
-```text
-      .-.
-     (   )   ooh, look at that cursor...
-      \_/
-   .-.(   ).-.
-  (   .-.   )  << waving hand = mouse magic >>
-   \_(   )_/
-      ""
-   [human]  ->  [webcam]  ->  [computer]
+```
+                                                               
+                                                               
+        CCCCCCCCCCCCC                                  lllllll 
+     CCC::::::::::::C                                  l:::::l 
+   CC:::::::::::::::C                                  l:::::l 
+  C:::::CCCCCCCC::::C                                  l:::::l 
+ C:::::C       CCCCCC   ooooooooooo      ooooooooooo    l::::l 
+C:::::C               oo:::::::::::oo  oo:::::::::::oo  l::::l 
+C:::::C              o:::::::::::::::oo:::::::::::::::o l::::l 
+C:::::C              o:::::ooooo:::::oo:::::ooooo:::::o l::::l 
+C:::::C              o::::o     o::::oo::::o     o::::o l::::l 
+C:::::C              o::::o     o::::oo::::o     o::::o l::::l 
+C:::::C              o::::o     o::::oo::::o     o::::o l::::l 
+ C:::::C       CCCCCCo::::o     o::::oo::::o     o::::o l::::l 
+  C:::::CCCCCCCC::::Co:::::ooooo:::::oo:::::ooooo:::::ol::::::l
+   CC:::::::::::::::Co:::::::::::::::oo:::::::::::::::ol::::::l
+     CCC::::::::::::C oo:::::::::::oo  oo:::::::::::oo l::::::l
+        CCCCCCCCCCCCC   ooooooooooo      ooooooooooo   llllllll
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
 ```
 
 This project turns your webcam into a gesture-powered input device. Using OpenCV and MediaPipe, it detects hand landmarks in real time and maps them to mouse movement and clicks. In other words: your hand becomes the controller, and the cursor obeys your fingertips.
