@@ -1,26 +1,47 @@
 # Hand Gesture Mouse Control
 
-This project uses OpenCV and MediaPipe to control your computer mouse with hand gestures.
+```text
+      .-.
+     (   )   ooh, look at that cursor...
+      \_/
+   .-.(   ).-.
+  (   .-.   )  << waving hand = mouse magic >>
+   \_(   )_/
+      ""
+   [human]  ->  [webcam]  ->  [computer]
+```
 
-## Features
+This project turns your webcam into a gesture-powered input device. Using OpenCV and MediaPipe, it detects hand landmarks in real time and maps them to mouse movement and clicks. In other words: your hand becomes the controller, and the cursor obeys your fingertips.
+
+## What it can do
 
 - Move the mouse pointer by moving your hand
-- Perform a left click by pinching your index finger and thumb
-- Perform a right click by pinching your middle finger and thumb
+- Trigger a left click by pinching your index finger and thumb
+- Trigger a right click by pinching your middle finger and thumb
 - Hold and drag items by keeping your index finger and thumb pinched
-- Quit the program by pressing q
+- Exit the application at any time by pressing q
+
+## How it works
+
+The app captures video from your webcam, runs hand landmark detection with MediaPipe, and uses the detected positions of key landmarks to:
+
+- estimate the hand position
+- compute distances between fingers
+- translate those gestures into mouse actions using pynput
+
+This makes the experience feel a bit like science fiction, except it is running locally on your machine.
 
 ## Requirements
 
-Install the following Python packages:
+All required Python dependencies are listed in [requirements.txt](requirements.txt). Install them with:
 
 ```bash
-pip install opencv-python mediapipe pynput keyboard numpy
+pip install -r requirements.txt
 ```
 
-## How to run
+## Run the project
 
-From the project folder, run:
+From the project folder, start the application with:
 
 ```bash
 python main.py
@@ -28,6 +49,7 @@ python main.py
 
 ## Notes
 
-- A webcam is required.
-- The program uses the hand landmark model file named hand_landmarker.task.
-- Make sure your camera is available and enabled before starting.
+- A working webcam is required.
+- The project expects the hand landmark model file named hand_landmarker.task to be present in the project directory.
+- Make sure your camera permissions are enabled before launching the script.
+- For the best experience, use good lighting and keep your hand visible to the camera.
