@@ -1,7 +1,6 @@
 # Hand Gesture Mouse Control
 
-```
-                                                               
+```                                                            
                                                                
         CCCCCCCCCCCCC                                  lllllll 
      CCC::::::::::::C                                  l:::::l 
@@ -20,12 +19,7 @@ C:::::C              o::::o     o::::oo::::o     o::::o l::::l
      CCC::::::::::::C oo:::::::::::oo  oo:::::::::::oo l::::::l
         CCCCCCCCCCCCC   ooooooooooo      ooooooooooo   llllllll
                                                                
-                                                               
-                                                               
-                                                               
-                                                               
-                                                               
-                                                               
+                                                                                  
 ```
 
 This project turns your webcam into a gesture-powered input device. Using OpenCV and MediaPipe, it detects hand landmarks in real time and maps them to mouse movement and clicks. In other words: your hand becomes the controller, and the cursor obeys your fingertips.
