@@ -22,7 +22,12 @@ C:::::C              o::::o     o::::oo::::o     o::::o l::::l
                                                                                   
 ```
 
-This project turns your webcam into a gesture-powered input device. Using OpenCV and MediaPipe, it detects hand landmarks in real time and maps them to mouse movement and clicks. In other words: your hand becomes the controller, and the cursor obeys your fingertips.
+Tired of pushing a physical plastic mouse around your desk like a peasant from the early 2000s? Ever wished you could look like you're aggressively casting a magic spell at your monitor just to close a browser tab? 
+
+Well, welcome to the future. This project turns your webcam into a gesture-powered tracking device. Using OpenCV and Google's MediaPipe, it watches your hand landmarks in real time and maps them to your mouse cursor. Yes, you can now control your computer by waving your hands in the air like a sci-fi character—or someone trying to shoo away a very persistent fly. 
+
+*(Warning: May cause your coworkers/roommates to think you've lost your mind.)*
+
 
 ## What it can do
 
