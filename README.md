@@ -1,6 +1,6 @@
 # Hand Gesture Mouse Control
 
-```                                                            
+```                                                           
                                                                
         CCCCCCCCCCCCC                                  lllllll 
      CCC::::::::::::C                                  l:::::l 
